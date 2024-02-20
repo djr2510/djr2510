@@ -1,0 +1,18 @@
+var nome = "Davi"
+var nascimento = 2006;
+var anoAtual = new Date().getFullYear();
+
+var idade = anoAtual-nascimento;
+
+var template = `idade: ${idade} anos`;
+
+console.log(template); 
+
+if (idade>=18)
+{
+    var templateMaior = `Usuario: ${nome} é maior de idade`;
+    console.log(templateMaior)
+}else{
+    var templateMenor = `Usuario: ${nome} é NÃO maior de idade`;
+    console.log(templateMenor)
+}
